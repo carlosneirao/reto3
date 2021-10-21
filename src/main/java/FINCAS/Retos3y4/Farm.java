@@ -25,7 +25,7 @@ public class Farm implements Serializable{
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
     private String address;
-    private Integer exension;
+    private Integer extension;
     private Integer categ_id;
     private String name;
     
@@ -66,12 +66,12 @@ public class Farm implements Serializable{
         this.address = address;
     }
 
-    public Integer getExension() {
-        return exension;
+    public Integer getExtension() {
+        return extension;
     }
 
-    public void setExension(Integer exension) {
-        this.exension = exension;
+    public void setExtension(Integer extension) {
+        this.extension = extension;
     }
 
     public Integer getCateg_id() {
