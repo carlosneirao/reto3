@@ -24,11 +24,11 @@ public class Farm implements Serializable{
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
+    private String name;
     private String address;
     private Integer extension;
-    private Integer categ_id;
-    private String name;
-    
+    private String description;
+       
     @ManyToOne
     @JoinColumn(name = "categoryId")
     @JsonIgnoreProperties("farms")
@@ -74,12 +74,12 @@ public class Farm implements Serializable{
         this.extension = extension;
     }
 
-    public Integer getCateg_id() {
-        return categ_id;
+    public String getDescription() {
+        return description;
     }
 
-    public void setCateg_id(Integer categ_id) {
-        this.categ_id = categ_id;
+    public void setDescription(String description) {
+        this.description = description;
     }
 
     public Categoria getCategory() {

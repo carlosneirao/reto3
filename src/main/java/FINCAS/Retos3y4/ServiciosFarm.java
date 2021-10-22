@@ -49,8 +49,8 @@ public class ServiciosFarm {
                 if(farm.getExtension()!=null){
                     e.get().setExtension(farm.getExtension());
                 }
-                if(farm.getCateg_id()!=null){
-                    e.get().setCateg_id(farm.getCateg_id());
+                if(farm.getDescription()!=null){
+                    e.get().setDescription(farm.getDescription());
                 }
                 if(farm.getName()!=null){
                     e.get().setName(farm.getName());
