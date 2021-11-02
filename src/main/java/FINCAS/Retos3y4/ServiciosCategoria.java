@@ -22,8 +22,8 @@ public class ServiciosCategoria {
         return metodosCrud.getAll();
     }
 
-    public Optional<Categoria> getCategoria(int CategoriaId) {
-        return metodosCrud.getCategoria(CategoriaId);
+    public Optional<Categoria> getCategoria(int categoriaId) {
+        return metodosCrud.getCategoria(categoriaId);
     }
 
     public Categoria save(Categoria categoria) {
@@ -54,7 +54,7 @@ public class ServiciosCategoria {
         }
         return categoria;
     }
-    public boolean deletecategoria(int categoriaId){
+    public boolean deleteCategoria(int categoriaId){
         Boolean d=getCategoria(categoriaId).map(categoria -> {
             metodosCrud.delete(categoria);
             return true;
