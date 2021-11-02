@@ -87,7 +87,7 @@ public class ServiciosReservaciones {
         Date datoDos = new Date();
         try{
             datoUno = parser.parse(datoA);
-            datoUno = parser.parse(datoB);
+            datoDos = parser.parse(datoB);
         }catch(ParseException evt){
             evt.printStackTrace();
         }if(datoUno.before(datoDos)){
